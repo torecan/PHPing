@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+
+
+
+	</title>
+</head>
+<body>
+
+<FORM ACTION="comment.php">
+
+<table>
+ <tr>
+   <td> NAME:  </td>
+   <td> <input type="text" name="name" size=20 placeholder="NAME"> </td>
+ </tr>
+
+ <tr>
+  <td> E-MAIL:  </td>
+  <td> <input type="text" name="mail" size=25 placeholder="E-MAIL"> </td>
+ </tr>
+ <tr>
+  <td> GENDER: </td>
+  <td> <input type="radio" name="gender" value="M" > MALE
+  	   <input type="radio" name="gender" value="F" > FEMALE
+  </td>
+ </tr>
+
+  <tr>
+   <td> Where did you find me ?</td>
+   <td>
+  		<select name="options"> 
+  		<option value="search"> Seach Engine	</option>	
+  		<option value="adv"> Advertisement </option>
+  		<option value="friend"> Friend </option>
+  		<option selected value="none"> Other </option>
+  		</select>
+   </td>
+  </tr>
+
+  <tr> <td> SUBSCRIBE </td>
+  	   <td> <input type="checkbox" name="subscribe" value="Y" checked> </td>
+  </tr>
+
+  <tr>
+   <TD>COMMENTS</TD>
+   <td> <textarea cols=20 rows=5> PUT YOUR COMMENTS HERE </textarea></td>
+   </tr>
+
+</table>
+
+<input type="submit" value="send it">
+
+</FORM>
+
+
+</body>
+</html>
