@@ -2,6 +2,8 @@
 <?php 
 $array = array();
 
+array_fill(0, 10, null)
+
 foreach ($array as $key => $value){
 	$array[$key]=rand(1,100);
 	}
