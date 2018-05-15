@@ -1,20 +1,45 @@
-<?php
+<div>
+<?php 
+$array = array();
 
-if (isset($_POST["value"])){
-	$quantity=settype($_POST["value"], "integer");
-	
-}
+foreach ($array as $key => $value){
+	$array[$key]=rand(1,100);
+	}
 
-printf("%d",$quantity);
-
+    return 
 
 ?>
 
 
-<FORM METHOD=POST >
+<select>
+  <?php foreach($array as $key => $value) { ?>
+    <option ><?php echo $value ?></option>
+  <?php }?>
+</select>
 
-<!-- <input type="text" name="value">  </input> -->
-<INPUT NAME="quantity" SIZE=2 
- VALUE="<?php echo $quantity;?>">
-</form>
 
+</div>
+
+<!-- 
+
+<div>
+<form action="test.php" method="POST"> 
+
+<SECTION>
+	 <?php  
+	 for ($i=1;$i<10;$i++){
+	 	echo $i;
+	 }
+	 ?>
+	<option value=1> </option>
+	<option value=2> </option>
+	<option value=3> </option>
+
+</SECTION>
+
+
+
+</div>
+
+
+-->
